@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:wght@500&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:wght@400;500&family=Roboto&display=swap');
 
 /* common style */
 a{
@@ -23,7 +26,7 @@ header{
     padding: 7px;
 }
 .mainHeader{
-    width: 65%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -52,16 +55,19 @@ header{
 
 main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
 }
 .container{
-    width: 80%;
     background-color: white;
-    margin: 35px auto;
     border-radius: 5px;
+    width: 80%;
+    margin: 21px;
 }
 .top-players{
     padding: 16px;
+    
 }
 .player-title{
     font-size: 24px;
@@ -87,7 +93,9 @@ main{
     height: 56px;
     margin-right: 16px;
 }
-
+hr{
+    border: 1px solid #D1D1D1;
+}
 /* top players end */
 
 
@@ -99,7 +107,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    
 }
 .top-block-items{
     display: flex;
@@ -108,11 +116,21 @@ main{
     justify-content:first baseline;
 }
 #author{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size:15px;
-}
-.left_img{
+    font-weight: 100;
 
+}
+#date{
+    color: #562eff;
+}
+.right_des #dates{
+    font-size: small;
+    font-weight: 100;
+}
+.left_img img{
+    width: 177px;
+    margin-top: 5px;
 }
 .right_des{
     margin-left: 15px;
@@ -121,3 +139,134 @@ main{
     margin: 0px auto;
 }
 /* top block ended */
+
+
+
+/* lates course start */
+.contant_item img{
+    width:100%;
+}
+.lates_course{
+    margin: 8px;
+}
+.course_contant{
+    display: flex;
+}
+.contant_item{
+    margin: 2px 25px;
+    padding: 15px;
+    box-shadow: 0px 0px 11px -5px grey;
+    border-radius: 10px;
+}
+.contant_item p{
+    margin: 0px;
+    font-weight: bolder;
+    margin: 5px 0px;
+}
+.contant_item .course_deteils{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+
+}
+.course_deteils{
+    box-sizing: 2px 4px 1px 6px red;
+}
+.contant_item #course_name{
+    color: #ed6b4f;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.course_deteils span i{
+    font-size: 12px;
+}
+.course_deteils .rating{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.course_deteils #times {
+    background-color: #fddcd5;
+    color: #ff677a;
+    padding: 1px 16px;
+    border-radius: 16px;
+}
+/* lates course end */
+
+
+
+
+
+/* lates_course start */
+
+.lates_course{
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.fa-star.filled{
+    color: rgb(245, 229, 8);
+}
+.fa-star.empty{
+    color: gray;
+    opacity: 0.4;
+}
+
+@media (max-width: 850px){
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-block-items{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .player-title{
+        text-align: center;
+    }
+    .course_contant{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
+@media (max-width:668px){
+    .mainHeader{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player-title{
+        text-align: center;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-block-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-block-items{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .left_img img{
+        width: 100%;
+    }
+    .right_des{
+        width: 100%;
+    }
+
+
+
+    .course_contant{
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
