@@ -113,6 +113,7 @@ hr{
     display: flex;
     align-items: center;
     margin: 5px;
+    margin-top: 20px;
     justify-content:first baseline;
 }
 #author{
