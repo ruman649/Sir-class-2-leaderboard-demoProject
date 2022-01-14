@@ -240,6 +240,7 @@ hr{
     }
     .container{
         grid-template-columns: repeat(2, 1fr);
+        width: 90%;
     }
     .player-title{
         text-align: center;
@@ -268,6 +269,8 @@ hr{
         display: flex;
         flex-direction: column;
     }
+    .lates_course{
+        width: 100%;
 }
 
 
